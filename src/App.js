@@ -3,7 +3,7 @@ import React from "react";
 import ConceptState from "./component/Concept-State";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
-  return <ConceptState></ConceptState>
+  return <ConceptJsx></ConceptJsx>
 }
 
 export default App;
