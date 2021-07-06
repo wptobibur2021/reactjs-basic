@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-
+import './Profile.css'
 class Profile extends Component {
     render() {
         return (
             <div className="container">
                 <div className="row">
                     <div className='col-md-3'></div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 mt-5">
                         <div className="profile-information">
                             <div className='about-me'>
                                 <h2>Name: Md Tobibur Rohman</h2>
@@ -18,16 +18,17 @@ class Profile extends Component {
                                 </p>
                             </div>
                             <div className='skills'>
-                                <h2>My Skills</h2>
-                                <button type="button" className="btn btn-primary">Primary</button>
-                                <button type="button" className="btn btn-secondary">Secondary</button>
-                                <button type="button" className="btn btn-success">Success</button>
-                                <button type="button" className="btn btn-danger">Danger</button>
-                                <button type="button" className="btn btn-warning">Warning</button>
-                                <button type="button" className="btn btn-info">Info</button>
-                                <button type="button" className="btn btn-light">Light</button>
-                                <button type="button" className="btn btn-dark">Dark</button>
-                                <button type="button" className="btn btn-link">Link</button>
+                                <h2>My Skills:</h2>
+                                <button type="button" className="btn btn-primary skills-item">Php</button>
+                                <button type="button" className="btn btn-secondary skills-item">WordPress</button>
+                                <button type="button" className="btn btn-success skills-item">ReactJS</button>
+                                <button type="button" className="btn btn-danger skills-item">Laravel</button>
+                            </div>
+                            <div className="social-media mt-5">
+                                <h2>Social Media:</h2>
+                                <button type="button" className="btn btn-primary skills-item">Facebook</button>
+                                <button type="button" className="btn btn-secondary skills-item">Linkind</button>
+                                <button type="button" className="btn btn-success skills-item">Twitter</button>
                             </div>
                         </div>
                     </div>
