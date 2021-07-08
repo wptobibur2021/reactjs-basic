@@ -1,11 +1,13 @@
-import ConceptJsx from "./component/Concept-JSX";
 import React from "react";
-import ConceptState from "./component/Concept-State";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Profile from "./component/profile/Profile";
-import Index from "./component/profile";
+import Index from "./component/profile/Index";
+import Props from "./component/props/Props";
 function App() {
-  return <Index></Index>
+  return (
+      <div>
+        <Props name='Monir Hossain'></Props>
+        <Props name='Kabir Hossain'></Props>
+      </div>
+  )
 }
-
 export default App;
