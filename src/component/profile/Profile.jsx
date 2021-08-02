@@ -4,7 +4,6 @@ import AboutMe from "./About-Me";
 import Skills from "./Skills";
 import SocialMedia from "./Social-Media";
 class Profile extends Component {
-
     me = {
         name: 'Md Tobibur Rohman',
         title: 'I am Web Application Developer',

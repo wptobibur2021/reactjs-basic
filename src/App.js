@@ -1,8 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Index from "./component/profile/Index";
-import Props from "./component/props/Props";
+import State from "./component/state/State";
 function App() {
-  return <Index></Index>
+  return <State></State>
 }
 export default App;
