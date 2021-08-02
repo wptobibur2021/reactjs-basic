@@ -1,7 +1,8 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import State from "./component/state/State";
+import Timer from "./component/state/Timer";
+
 function App() {
-  return <State></State>
+  return <Timer></Timer>
 }
 export default App;
