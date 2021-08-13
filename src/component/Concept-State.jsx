@@ -1,17 +1,24 @@
 import React, {Component} from 'react';
 
 class ConceptState extends Component {
-    constructor(){
-        super()
-        this.state={
-            name: 'Md Tobibur Rohman',
-            study: 'BSc in Computer Science',
-            job: 'Web Application Developer Lerner',
-            live: 'Dhaka, Bangladesh',
-        }
-        this.state={
-            
-        }
+    // constructor(){
+    //     super()
+    //     this.state={
+    //         name: 'Md Tobibur Rohman',
+    //         study: 'BSc in Computer Science',
+    //         job: 'Web Application Developer Lerner',
+    //         live: 'Dhaka, Bangladesh',
+    //     }
+    //     this.state={
+    //
+    //     }
+    // }
+
+    state = {
+        name: 'Md Tobibur Rohman',
+        study: 'BSc in Computer Science',
+        job: 'Web Application Developer Lerner',
+        live: 'Dhaka, Bangladesh',
     }
 
     render() {

@@ -1,8 +1,8 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Timer from "./component/state/Timer";
+import FormEvent from "./component/event/FormEvent";
 
 function App() {
-  return <Timer></Timer>
+  return <FormEvent></FormEvent>
 }
 export default App;

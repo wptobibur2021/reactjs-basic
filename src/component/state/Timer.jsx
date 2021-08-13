@@ -6,10 +6,25 @@ class Timer extends Component {
         count: 0,
     }
     timerID = null
+//This is Format function just use test
+    // format() {
+    //     const { count } = this.state;
+    //     let seconds = Math.floor(count / 1000);
+    //     let minutes = Math.floor(seconds / 60);
+    //
+    //     minutes = minutes < 1 ? '00' : minutes < 10 ? `0${minutes}` : minutes;
+    //     seconds = seconds < 1 ? '00' : seconds < 10 ? `0${seconds}` : seconds;
+    //     return `${minutes}:${seconds}`;
+    // }
+
     /* This is Increment Function Call */
     incrementCount = () => {
-        this.setState({
-            count: this.state.count +1
+        this.setState(prev => {
+                return{
+                    count: this.state.count +1
+                }
+        }, () => {
+            console.log(this.state.count);
         })
     }
     /* This is Decrement Function Call */
@@ -20,9 +35,10 @@ class Timer extends Component {
             })
         }
     }
+
     /* This is Start Timer Function Call */
     timerStart = () =>{
-        if(this.state.count ===0){
+        if(this.state.count === 0){
             alert('Please Increment your timer')
         }else if(this.state.count > 0 && !this.timerID){
             alert('Now Start timer')
