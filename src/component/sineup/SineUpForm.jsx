@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import RadioField from "./RadioField";
 import CheckBoxField from "./CheckBoxField";
 
-const SineUpForm = ({data, handleChange, submitHandle, btnText, agreementHandle, agreement}) =>{
+const SineUpForm = ({data, handleChange, submitHandle, btnText, agreementHandle, agreement, errors}) =>{
     return (
         <form onSubmit={submitHandle}>
             <div className='form-row'>
@@ -16,6 +16,7 @@ const SineUpForm = ({data, handleChange, submitHandle, btnText, agreementHandle,
                     onChange = {handleChange}
                     label = 'Full Name'
                     type = 'text'
+                    error = {errors.fullName}
                 />
 
                 <TextField
@@ -25,6 +26,7 @@ const SineUpForm = ({data, handleChange, submitHandle, btnText, agreementHandle,
                     onChange = {handleChange}
                     label = 'Father Name'
                     type = 'text'
+                    error = {errors.fatherName}
                 />
                 <TextField
                     name = 'motherName'
@@ -33,6 +35,7 @@ const SineUpForm = ({data, handleChange, submitHandle, btnText, agreementHandle,
                     onChange = {handleChange}
                     label = 'Mother Name'
                     type = 'text'
+                    error = {errors.motherName}
                 />
                 <TextField
                     name = 'password'
@@ -41,6 +44,7 @@ const SineUpForm = ({data, handleChange, submitHandle, btnText, agreementHandle,
                     onChange = {handleChange}
                     label = 'Password'
                     type = 'password'
+                    error = {errors.password}
                 />
                 <TextField
                     name = 'address'
@@ -49,6 +53,7 @@ const SineUpForm = ({data, handleChange, submitHandle, btnText, agreementHandle,
                     onChange = {handleChange}
                     label = 'Address'
                     type = 'text'
+                    error = {errors.address}
                 />
                 <TextField
                     name = 'birthDay'
@@ -56,21 +61,25 @@ const SineUpForm = ({data, handleChange, submitHandle, btnText, agreementHandle,
                     onChange = {handleChange}
                     label = 'Birth Day'
                     type = 'date'
+                    error = {errors.birthDay}
                 />
                 <RadioField
                     value = 'Male'
                     onChange = {handleChange}
                     label = 'Male'
+                    error = {errors.gender}
                 />
                 <RadioField
                     value = 'Female'
                     onChange = {handleChange}
                     label = 'Female'
+                    error = {errors.gender}
                 />
                 <RadioField
                     value = 'Others'
                     onChange = {handleChange}
                     label = 'Others'
+                    error = {errors.gender}
                 />
 
                 <CheckBoxField
@@ -93,7 +102,8 @@ SineUpForm.prototype = {
     data: PropTypes.object.isRequired,
     btnText: PropTypes.string.isRequired,
     agreementHandle: PropTypes.func.isRequired,
-    agreement: PropTypes.bool.isRequired
+    agreement: PropTypes.bool.isRequired,
+    errors: PropTypes.object.isRequired
 }
 
 export default SineUpForm

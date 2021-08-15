@@ -1,9 +1,10 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SineUp from "./component/sineup/SineUp";
+import Index from "./component/sineup/Index";
 
 
 function App() {
-  return <SineUp></SineUp>
+  return <Index></Index>
 }
 export default App;
