@@ -43,12 +43,11 @@ class FormEvent extends Component {
         //Destructor Value
         const {name, bio, birthDate, email, fName, phoneNo, skills, agree, country} = this.state
         return (
-
-            <div className='container mt-5'>
-                <div className='row'>
-                    <div className='col-md-6'>
-                        <div className='form-row'>
-
+            <div className='col-md-6'>
+                <div className='card-header mb-5'>
+                    <h2 className='text-danger'>Form Event With State</h2>
+                </div>
+                <div className='form-row'>
                                 <div className='row'>
                                     <div className='col-md-6'>
                                         <label className='col-form-label mb-1 text-danger'>Name</label>
@@ -108,19 +107,13 @@ class FormEvent extends Component {
                                             I agree with your services, thank you.
                                         </label>
                                     </div>
-
-
-
                                     <div className='col-md-12'>
                                         <label className='col-form-label mb-1 text-danger'>Bio Information</label>
                                         <textarea value={bio} onChange={this.handleChange} name='bio' className='form-control'></textarea>
                                     </div>
                                 </div>
-                                <button onClick={this.submit} className='btn btn-outline-info mt-4'>Submit</button>
-
+                                <button onClick={this.submit} className='btn btn-outline-info mt-4'>Show Data</button>
                         </div>
-                    </div>
-                </div>
             </div>
         );
     }
